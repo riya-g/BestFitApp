@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dinner">
+
+    <CheckBox
+        android:id='@+id/Curd_rice'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectItem1"
+        android:text='Curd Rice' />
+
+    <CheckBox
+        android:id='@+id/fish'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectItem2"
+        android:text='Smoked Fish Salad' />
+
+    <CheckBox
+        android:id='@+id/stew'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectItem3"
+        android:text='Vegetable and Chicken stew' />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendSelected"
+        android:text='Done'
+        android:layout_marginTop="12dp"
+        android:background="#FF4500"/>
+
+</LinearLayout>
