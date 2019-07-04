@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dinner">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text='What did you eat for dinner?'
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="italic|bold"/>
+
+            <CheckBox
+            android:id='@+id/Curd_rice'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem1"
+            android:layout_below="@id/text"
+                android:layout_marginTop="40dp"
+            android:text='Curd Rice' />
+
+        <CheckBox
+            android:id='@+id/fish'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem2"
+            android:text='Smoked Fish Salad'
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/Curd_rice"/>
+
+        <CheckBox
+            android:id='@+id/stew'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem3"
+            android:text='Vegetable and Chicken stew'
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/fish"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendSelected"
+            android:text='Done'
+            android:background="#FF4500"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/stew"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

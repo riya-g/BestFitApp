@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Breakfast">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text='What did you eat for breakfast?'
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="italic|bold"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id='@+id/cornflakes'
+            android:text='Cornflakes'
+            android:layout_marginTop="40dp"
+            android:onClick="selectItem1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id='@+id/eggs'
+            android:text='Eggs'
+            android:layout_below="@id/cornflakes"
+            android:onClick="selectItem2"/>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eggs">
+
+            <Button
+                android:id="@+id/minus1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:background="#4DB6AC"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id='@+id/Amt1'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/minus1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="0"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/plus1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/Amt1"
+                android:background="#4DB6AC"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="+"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id='@+id/bread'
+            android:text='Brown Bread'
+            android:onClick="selectItem3"
+            android:layout_below="@id/layout1"/>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bread">
+
+            <Button
+                android:id="@+id/minus2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:background="#4DB6AC"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id='@+id/Amt2'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/minus2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="0"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/plus2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/Amt2"
+                android:background="#4DB6AC"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="+"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Done'
+            android:layout_centerHorizontal="true"
+            android:onClick="sendSelected"
+            android:layout_below="@id/layout2"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
