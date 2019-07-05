@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:replace="android:appComponentFactory"
+    android:appComponentFactory="whateverString"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:fitsSystemWindows="true"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    tools:context=".AboutUs">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:text='Some diet plans'
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/BlueGrey700"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textStyle="italic|bold"/>
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:pageColor="#000000"
+                app:fillColor="#FFFFFF"
+                android:layout_below="@id/text1"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="#223344"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:strokeWidth="1dp"
+                android:id="@+id/carouselView1"></com.synnapps.carouselview.CarouselView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BlueGrey700"
+                android:layout_below="@id/carouselView1"
+                android:id="@+id/layout2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text2"
+                    android:text='Some diet videos'
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_alignParentLeft="true"
+                    android:textAllCaps="true"
+                    android:textStyle="italic|bold"/>
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="#4DB6AC"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="-"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <view
+                android:id="@+id/youTubePlay"
+                android:layout_below="@id/layout2"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+           <LinearLayout
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:weightSum="4"
+                android:layout_below="@id/youTubePlay">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:padding="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/ic_add_location_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/about_us_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/our_mission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:weightSum="4"
+                android:layout_below="@id/about_us">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/our_mission_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:padding="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/our_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:weightSum="4"
+                android:layout_below="@id/our_mission">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:padding="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/our_plan_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

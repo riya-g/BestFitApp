@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".YouActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -34,6 +35,7 @@
             android:orientation="horizontal"
             android:padding="8dp"
             android:weightSum="5">
+
             <Button
                 android:id="@+id/signin"
                 android:layout_width="0dp"
@@ -42,14 +44,14 @@
                 android:background="@drawable/button"
                 android:text="SIGN IN"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/BlueGrey50"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:paddingLeft="8dp"
                 android:layout_weight="3"
-                android:text="Sign in to access tickets\nand gameshows"
+                android:text="Sign in for a healthy lifestyle"
                 android:gravity="center|start"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
@@ -59,12 +61,11 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <ScrollView
+    <RelativeLayout
         android:id="@+id/relLayout"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:background="@color/BlueGrey50"
-        android:layout_below="@id/app_bar"
         android:paddingTop="16dp">
 
 
@@ -74,58 +75,8 @@
             android:orientation="vertical"
             android:padding="4dp">
 
-
             <LinearLayout
-                android:id="@+id/profile_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFF"
-                android:padding="16dp"
-                android:weightSum="4">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:padding="2dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/user" />
-
-                <TextView
-                    android:id="@+id/profile"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:text="Profile"
-                    android:gravity="center|left"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:padding="4dp" />
-
-                <ImageView
-                    android:id="@+id/imageView0"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@color/BlueGrey100" />
-
-            <LinearLayout
-                android:id="@+id/location_layout"
+                android:id="@+id/mealTracker"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
@@ -143,21 +94,18 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Selected City"
+                    android:text="Meal Tracker"
                     android:gravity="center|left"
                     android:textColor="@color/colorBlack"
                     android:textSize="16dp" />
 
                 <TextView
-                    android:id="@+id/city"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="left"
                     android:layout_weight="1"
-                    android:hint=":Mumbai"
-                    android:padding="4dp"
-                    android:gravity="center"
-                    android:textColor="@color/BlueGrey100" />
+                    android:padding="4dp" />
+
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -168,6 +116,53 @@
                     app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/BlueGrey100" />
+
+            <LinearLayout
+                android:id="@+id/Target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:padding="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Target"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="4dp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            </LinearLayout>
+
 
             <View
                 android:layout_width="match_parent"
@@ -177,7 +172,7 @@
                 android:background="@color/BlueGrey100" />
 
             <LinearLayout
-                android:id="@+id/about_us_layout"
+                android:id="@+id/aboutUs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
@@ -218,53 +213,6 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@color/BlueGrey100" />
-
-            <LinearLayout
-                android:id="@+id/help_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFF"
-                android:padding="16dp"
-                android:weightSum="4">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:padding="2dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_help_black_24dp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Help"
-                    android:id="@+id/help_text"
-                    android:gravity="center|left"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:padding="4dp" />
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
-
-            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -273,7 +221,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@color/BlueGrey100" />
             <LinearLayout
-                android:id="@+id/logout_layout"
+                android:id="@+id/Logout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
@@ -320,14 +268,46 @@
 
         </LinearLayout>
 
-    </ScrollView>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    </RelativeLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/Next"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Next"-->
+            <!--android:onClick="onClickNext"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/Loc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Location"-->
+            <!--android:onClick="onClickLoc"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/relLayoutBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation"
-        android:background="?android:attr/windowBackground"/>
+        android:layout_height="fill_parent"
+        android:background="@color/BlueGrey50">
 
-</RelativeLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_navigation"
+            android:background="?android:attr/windowBackground"/>
+
+    </LinearLayout>
+
+</LinearLayout>

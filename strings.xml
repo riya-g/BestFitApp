@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">BestFit</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="about_us">WHO ARE WE?</string>
+    <string name="our_mission">WHAT WE DO</string>
+    <string name="our_plan">HOW WE DO IT!!!</string>
+    <string name="our_vision">OUR VISION</string>
+    <string name="about_us_title">Kasakai</string>
+    <string name="our_mission_title">Our Mission</string>
+    <string name="our_plan_title">Our Plan</string>
+    <string name="our_vision_title">Our Vision</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="about_us_content">
+        "Track your health, lose weight, eat healthy food with Health Check: your calorie counter, nutrition calculator and food tracker. Get customised diet plan for weight loss and other health goals. Log foods, count calories, plan a diet chart, track overall health, steps and workouts, water intake and document your weight loss journey."
+    </string>
+    <string name="our_mission_content">
+        "Weight loss isn’t hard. HealthCheck’s calorie counter helps you lose weight and get fit with health data, fitness trackers and your specialised diet plan. Let your calorie counter, diet chart, and nutrition calculator guide you to your fat loss goals. Your personal food tracker motivates you to try healthy recipes, follow your diet plan and eat healthy food. The fitness tracker encourages you to follow your workout chart, go to the gym or do yoga."
+    </string>
+    <string name="our_plan_content">
+        "Lose weight with a personal diet plan for your health and fitness goals. HealthCheck creates diet chart and meal planner from your health data and BMI so you know exactly how to go about your diet and workouts.Eat healthy food with your nutrition and calorie calculator! Log meals with a touch, check your macros, or simply take a photo of your lunch. Access the largest database of Indian foods including international cuisines and healthy recipes, from dal to dosa, with Indian serving sizes."
+    </string>
+    <string name="our_vision_content">
+        "Count calories: view your health data, weight loss, fat loss progress and daily calories at a glance. Make calorie counting a habit while you start healthy eating habits.Stay mindful of your calorie intake and health through custom meal and water tracking reminders."
+    </string>
+
+    <string name="loc_1">Delhi</string>
+    <string name="loc_2">Mumbai</string>
+    <string name="loc_3">Ahmedabad</string>
+    <string name="loc_4">Bengaluru</string>
+    <string name="loc_5">Chandigarh</string>
+    <string name="loc_6">Chennai</string>
+    <string name="loc_7">Hyderabad</string>
+    <string name="loc_8">Kochi</string>
+    <string name="loc_9">Kolkata</string>
+    <string name="loc_10">Pune</string>
+
+    <string name="des_content">"El Clasico is the term used to refer to football matches between Spain’s most famous and bitterest rivals: FC Barcelona and Real Madrid C.F. The two teams meet twice during a season, with an additional two times in the Copa del Rey, Champions League, and the Supercopa de España, and possibly in the UEFA Super Cup as well. \n"
+                "\n"
+                "Description: Through the El Clasico, every year the citizens of Catalonia (Barcelona is the capital) have proclaimed their independence from Spain. It is possibly the most-watched and talked-about fixture. The prestigious El Clasico started on May 13, 1902. The two teams have met each other in 228 competitive matches. Real Madrid has a slight advantage with 92 wins over their rivals Barcelona with 89 wins. The remaining 48 encounters ended in a draw. However, if exhibition matches are included, Barcelona has the advantage with 108 wins over Real Madrid’s 96. Barcelona and Read Madrid have won a combined 54 Spanish League Championships and are arguably the two richest clubs in the sport. \n"
+</string>
+    <string name="des_text">El Classico</string>
+    <string name="title_activity_login">Login</string>
+    <!-- Strings related to login -->
+    <string name="name_error">Enter Valid Name</string>
+    <string name="email_error">Enter Valid Email</string>
+    <string name="password_error">Enter Some Password</string>
+    <string name="mobile_error">Enter Valid Mobile Number</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+    completions."
+    </string>
+
+    <string name="des_date">23-3-18\n\nRs. 500</string>
+    <string name="des_venue">Hopipola, Malad</string>
+    <string name="tercon">Terms and conditions</string>
+
+    <string name="football">Football</string>
+    <string name="cricket">Cricket</string>
+    <string name="tennis">Tennis</string>
+    <string name="open_mic">Open Mics</string>
+    <string name="board_games">Board Games</string>
+    <string name="f1">Formula 1</string>
+
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+
+    <string name="login"><u>LOGIN</u>.</string>
+
+</resources>
